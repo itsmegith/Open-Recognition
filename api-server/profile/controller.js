@@ -33,7 +33,7 @@ controller.get_all = (req, res) => {
 
 controller.get_add = (req, res) => {
     console.log("-- GET /add --");
-    res.send('put a new profile\'s name in the body and send a post request to this address: { first_name: "string" }. you\'ll get back the new profile\'s entry');
+     res.send(req.body.new_profile);
 }
 
 controller.post_add = (req, res) => {
@@ -86,7 +86,7 @@ controller.get_id = (req, res) => {
 controller.get_id_update = (req, res) => {
     const profile_id = req.params.id;
     console.log("-- GET /"+profile_id+"/update --");
-    res.send('send a post request to this address a first_name in the body');
+     res.send(_id: req.params.profile_id,{$set:{new_profile}});
 }
 
 controller.post_id_update = (req, res) => {
@@ -126,7 +126,7 @@ controller.post_id_update = (req, res) => {
 controller.get_id_delete = (req, res) => {
     const profile_id = req.params.id;
     console.log("-- GET /"+profile_id+"/delete --");
-    res.send('send a post request to this address with an profile ID, it will be deleted');
+    res.send(_id:req.params.profile_id);
 }
 
 controller.post_id_delete = (req, res) => {

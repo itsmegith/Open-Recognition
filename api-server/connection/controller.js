@@ -33,14 +33,18 @@ controller.get_all = (req, res) => {
 
 controller.get_add = (req, res) => {
     console.log("-- GET /add --");
-    res.send('put a new author\'s title in the body and send a post request to this address: { title: "string" }. you\'ll get back the new author\'s entry');
+    res.send(req.body.new_profile);
 }
 
 controller.post_add = (req, res) => {
     console.log("-- POST /add --");
-    const new_title = req.body.title;
-    const new_author = { title: new_title };
-    connections.create(new_author)
+    const new_user1_id = req.body.user1_id;
+    const new_user2_id_id = req.body.user2_id_id;
+    const new_accept1 = req.body.accept1;
+    const new_accept2 = req.body.accept2;
+    const new_story = req.body.story;
+    const new_profile = { user1_id: new_user1_id,user2_id_id: new_user2_id_id,accept1: new_accept1,accept2: new_accept2, story: new_story };
+    connections.create(new_profile)
       // modify the next line based on your project's needs
       .then((db_response) => { res.send(db_response) })
       .catch((err) => {
@@ -56,9 +60,9 @@ controller.post_add = (req, res) => {
 
 
 controller.get_id = (req, res) => {
-    const author_id = req.params.id;
-    console.log("-- GET /"+author_id+"/find --");
-    const id_object = { _id: author_id };
+    const profile_id = req.params.id;
+    console.log("-- GET /"+profile_id+"/find --");
+    const id_object = { _id: profile_id };
     connections.find(id_object)
       // modify the next line based on your project's needs
       .then((db_response) => { res.send(db_response) })
@@ -77,18 +81,22 @@ controller.get_id = (req, res) => {
 
 
 controller.get_id_update = (req, res) => {
-    const author_id = req.params.id;
-    console.log("-- GET /"+author_id+"/update --");
-    res.send('send a post request to this address a title in the body');
+    const profile_id = req.params.id;
+    console.log("-- GET /"+profile_id+"/update --");
+    res.send(_id: req.params.profile_id,{$set:{new_profile}});
 }
 
 controller.post_id_update = (req, res) => {
-    const author_id = req.params.id;
-    console.log("-- POST /"+author_id+"/update --");
-    const id_object = { _id: author_id };
-    const title = req.body.title;
-    const title_object = { title: title };
-    connections.update(id_object, title_object)
+    const profile_id = req.params.id;
+    console.log("-- POST /"+profile_id+"/update --");
+    const id_object = { _id: profile_id };
+    const user1_id = req.body.user1_id;
+    const user2_id_id = req.body.user2_id_id;
+    const accept1 = req.body.accept1;
+    const accept2 = req.body.accept2;
+    const story = req.body.story;
+    const connection_object = { user1_id: user1_id,user2_id_id:user2_id_id,accept1:accept1,accept2:accept2,story:story };
+    connections.update(id_object, connection_object)
       // modify the next line based on your project's needs        
       .then((db_response) => { res.send(db_response) })
       .catch((err) => {
@@ -104,15 +112,15 @@ controller.post_id_update = (req, res) => {
 
 
 controller.get_id_delete = (req, res) => {
-    const author_id = req.params.id;
-    console.log("-- GET /"+author_id+"/delete --");
-    res.send('send a post request to this address with an author ID, it will be deleted');
+    const profile_id = req.params.id;
+    console.log("-- GET /"+profile_id+"/delete --");
+    res.send(_id:req.params.profile_id);
 }
 
 controller.post_id_delete = (req, res) => {
-    const author_id = req.params.id;
-    console.log("-- POST /"+author_id+"/delete --");
-    const id_object = { _id: author_id };
+    const profile_id = req.params.id;
+    console.log("-- POST /"+profile_id+"/delete --");
+    const id_object = { _id: profile_id };
     connections.remove(id_object)
       // modify the next line based on your project's needs
       .then((db_response) => { res.send(db_response) })

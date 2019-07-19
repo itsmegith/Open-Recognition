@@ -2,12 +2,12 @@ const mongoose = require('mongoose');
 
 const connection_schema = mongoose.Schema(
   {
-    user1: {
-      type: id
+    user1_id: {
+      type: int
       
     },
-    user2: {
-      type: id
+    user2_id: {
+      type: int
       
     },
     accept1: {
@@ -18,6 +18,14 @@ const connection_schema = mongoose.Schema(
       type: Boolean
       
     },
+    story:{
+      type: String
+    },
+    date: {
+      type: date,
+      default: date.now
+    }
+    
 
 
 
