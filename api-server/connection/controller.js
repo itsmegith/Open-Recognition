@@ -39,11 +39,11 @@ controller.get_add = (req, res) => {
 controller.post_add = (req, res) => {
     console.log("-- POST /add --");
     const new_user1_id = req.body.user1_id;
-    const new_user2_id_id = req.body.user2_id_id;
+    const new_user2_id = req.body.user2_id;
     const new_accept1 = req.body.accept1;
     const new_accept2 = req.body.accept2;
     const new_story = req.body.story;
-    const new_profile = { user1_id: new_user1_id,user2_id_id: new_user2_id_id,accept1: new_accept1,accept2: new_accept2, story: new_story };
+    const new_profile = { user1_id: new_user1_id,user2_id: new_user2_id,accept1: new_accept1,accept2: new_accept2, story: new_story };
     connections.create(new_profile)
       // modify the next line based on your project's needs
       .then((db_response) => { res.send(db_response) })
