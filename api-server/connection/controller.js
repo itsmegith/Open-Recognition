@@ -83,7 +83,7 @@ controller.get_id = (req, res) => {
 controller.get_id_update = (req, res) => {
     const profile_id = req.params.id;
     console.log("-- GET /"+profile_id+"/update --");
-    res.send(_id: req.params.profile_id,{$set:{new_profile}});
+    res.send(req.body.new_profile);
 }
 
 controller.post_id_update = (req, res) => {
@@ -114,7 +114,7 @@ controller.post_id_update = (req, res) => {
 controller.get_id_delete = (req, res) => {
     const profile_id = req.params.id;
     console.log("-- GET /"+profile_id+"/delete --");
-    res.send(_id:req.params.profile_id);
+    res.send(req.body.profile_id);
 }
 
 controller.post_id_delete = (req, res) => {

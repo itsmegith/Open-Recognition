@@ -46,7 +46,7 @@ controller.post_add = (req, res) => {
     const new_active = req.body.active;
     const new_photo = req.body.photo;
     const new_profile = { firstName: new_firstName,lastName:new_lastName,username: new_username,
-      email:new_email,password:new_password,active:new_active,photo:ne};
+      email:new_email,password:new_password,active:new_active,photo:new_photo};
     profiles.create(new_profile)
       // modify the next line based on your project's needs
       .then((db_response) => { res.send(db_response) })
@@ -86,7 +86,7 @@ controller.get_id = (req, res) => {
 controller.get_id_update = (req, res) => {
     const profile_id = req.params.id;
     console.log("-- GET /"+profile_id+"/update --");
-     res.send(_id, req.params.profile_id,{$set:{new_profile}});
+     res.send(req.body.new_profile);
 }
 
 controller.post_id_update = (req, res) => {
@@ -126,7 +126,7 @@ controller.post_id_update = (req, res) => {
 controller.get_id_delete = (req, res) => {
     const profile_id = req.params.id;
     console.log("-- GET /"+profile_id+"/delete --");
-    res.send(_id,req.params.profile_id);
+    res.send(req.body.profile_id);
 }
 
 controller.post_id_delete = (req, res) => {

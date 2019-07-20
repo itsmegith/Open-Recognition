@@ -27,7 +27,7 @@ const profile_schema = mongoose.Schema(
       type: Boolean
     },
     photo:{
-      type: URL,
+      type: __filename,
       required: false
     }
   }

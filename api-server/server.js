@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-const authors = require("./authors");
-router.use("/authors", authors);
+const profile = require("./profile");
+router.use("/profile", profile);
 
-const books = require("./books");
-router.use("/books", books);
+const connection = require("./connection");
+router.use("/connection", connection);
 
 module.exports = router;
