@@ -7,7 +7,7 @@ const controller = {};
 /* ------------------- INDEX -------------------*/
 // GET  "/"                     => greetings
 
-controller.welcome = (req, res) => {
+controller.welcome = (_req, res) => {
   console.log("-- GET /all --");
   res.send("hi, you're at the profiles api");
 }
@@ -15,7 +15,7 @@ controller.welcome = (req, res) => {
 /* ------------------- INDEX -------------------*/
 // GET  "/all"                     => show all profiles
 
-controller.get_all = (req, res) => {
+controller.get_all = (_req, res) => {
   console.log("-- GET /all --");
   profiles.find()
     // modify the next line based on your project's needs

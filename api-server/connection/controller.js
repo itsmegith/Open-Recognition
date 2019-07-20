@@ -96,7 +96,7 @@ controller.post_id_update = (req, res) => {
     const accept2 = req.body.accept2;
     const story = req.body.story;
     const connection_object = { user1_id: user1_id,user2_id_id:user2_id_id,accept1:accept1,accept2:accept2,story:story };
-    connections.update(id_object, connection_object)
+    connections.update(id_object,connection_object)
       // modify the next line based on your project's needs        
       .then((db_response) => { res.send(db_response) })
       .catch((err) => {
