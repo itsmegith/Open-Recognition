@@ -29,6 +29,10 @@ const profile_schema = mongoose.Schema(
     photo:{
       type:String,
       required: false
+    },
+    join_date: {
+      type: Date,
+      default: Date.now
     }
   }
 );
