@@ -22,15 +22,21 @@ router.get("/all", controller.get_all);
 router.get("/add", controller.get_add);
 
 router.post("/add", controller.post_add);
+/* ------------------- get authors names -------------------*/
+// get "/allAuthors"     => update author with names...
+router.get("/allAuthors", controller.get_allAuthors);
 
 /* ------------------- READ -------------------*/
 // GET  "/:id"             => View author Info with id ...
 
 router.get("/:id", controller.get_id);
 
+
+
 /* ------------------- UPDATE -------------------*/
 // GET  "/:id/update"     => instructions 
 // POST "/:id/update"     => update author with id...
+
 
 
 

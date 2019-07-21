@@ -22,6 +22,10 @@ function App() {
         <p>
           {require("./demo-dummy-api/get.json")}  <br />
           {require("./demo-dummy-api/books/id/get.json")[0].title}
+          {JSON.stringify(require("./demo-dummy-api/authors/allAuthors-get.json"))}
+          {JSON.stringify(require("./demo-dummy-api/books/allTitles-get.json"))}
+
+           
         </p>
       </header>
     </div>

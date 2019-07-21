@@ -27,6 +27,23 @@ controller.get_all = (req, res) => {
     });
 }
 
+controller.get_allAuthors = (req, res) => {
+ console.log("-- GET /all --");
+ authors.find()
+   // modify the next line based on your project's needs
+   .then((db_response) => {
+     const pojo_response = JSON.parse(JSON.stringify(db_response));
+     const map_cb = x => {delete x.__v; return x};
+     const no__v = pojo_response.map(map_cb);
+     res.send(no__v);
+   })
+   .catch((err) => {
+     res.status(500).send({
+       message: err.message
+     });
+   });
+}
+
 /* ------------------- CREATE -------------------*/
 // GET  "/add"                => instructions
 // POST "/add"                => Create new authors
