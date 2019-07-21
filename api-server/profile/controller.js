@@ -33,19 +33,19 @@ controller.get_all = (_req, res) => {
 
 controller.get_add = (req, res) => {
     console.log("-- GET /add --");
-     res.send(req.body.new_profile);
+     res.send();
 }
 
 controller.post_add = (req, res) => {
     console.log("-- POST /add --");
-    const new_firstName = req.body.firstName;
-    const new_lastName = req.body.lastName;
+    const new_first_name = req.body.first_name;
+    const new_last_name = req.body.last_name;
     const new_username = req.body.username;
     const new_email = req.body.email;
     const new_password = req.body.password;
     const new_active = req.body.active;
     const new_photo = req.body.photo;
-    const new_profile = { firstName: new_firstName,lastName:new_lastName,username: new_username,
+    const new_profile = { first_name: new_first_name,last_name:new_last_name,username: new_username,
       email:new_email,password:new_password,active:new_active,photo:new_photo};
     profiles.create(new_profile)
       // modify the next line based on your project's needs
@@ -93,16 +93,16 @@ controller.post_id_update = (req, res) => {
     const profile_id = req.params.id;
     console.log("-- POST /"+profile_id+"/update --");
     const id_object = { _id: profile_id };
-    const firstName = req.body.firstName;
+    const first_name = req.body.first_name;
     const username = req.body.username;
     const password = req.body.password;
     const email = req.body.email;
-    const lastName = req.body.lastName;
+    const last_name = req.body.last_name;
     const active = req.body.active;
     const photo = req.body.photo;
 
-    const name_object = { firstName: firstName ,
-      lastName:lastName,
+    const name_object = { first_name: first_name ,
+      last_name:last_name,
       username:username,
       email:email, 
       password: password,

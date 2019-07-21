@@ -33,7 +33,8 @@ controller.get_all = (req, res) => {
 
 controller.get_add = (req, res) => {
     console.log("-- GET /add --");
-    res.send(req.body.new_profile);
+  const newLocal = "send a post request to this rout with a user in the body - schema";
+    res.send(newLocal);
 }
 
 controller.post_add = (req, res) => {
