@@ -1,12 +1,38 @@
 [
     {
-        "__v": 0, 
-        "_id": "5d1628d372a085e397dbb7ad", 
-        "title": "big tables"
+        "_id": "5d343e5d7c7fe2011964ef42",
+        "user1_id": "5d3435756d1bfd76a13b87a0",
+        "user2_id": "5d34366cfb7ba57bdd4baaec",
+        "accept1": true,
+        "accept2": false,
+        "story": "he stole my wallet",
+        "date": "2019-07-21T10:28:45.438Z"
     },
     {
-        "__v": 0, 
-        "_id": "5d162b098fc020e5dc8fc31f", 
-        "title": "montgomery"
+        "_id": "5d344a218f8a7c11308f7ab6",
+        "user1_id": "5d34395010cba42ad842026f",
+        "user2_id": "5d343c2b990e9ffde5e16569",
+        "accept1": false,
+        "accept2": true,
+        "story": "I hate you",
+        "date": "2019-07-21T11:18:57.797Z"
+    },
+    {
+        "_id": "5d344bd035a0be70513b8bb3",
+        "user1_id": "5d3435756d1bfd76a13b87a0",
+        "user2_id": "5d342e6fbe005e4248231db5",
+        "accept1": false,
+        "accept2": true,
+        "story": "Hello",
+        "date": "2019-07-21T11:26:08.555Z"
+    },
+    {
+        "_id": "5d344ce08f8a7c11308f7ab7",
+        "user1_id": "5d34395010cba42ad842026f",
+        "user2_id": "5d343c2b990e9ffde5e16569",
+        "accept1": false,
+        "accept2": true,
+        "story": "I hate you",
+        "date": "2019-07-21T11:30:40.858Z"
     }
 ]

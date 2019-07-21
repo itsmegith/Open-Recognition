@@ -1,1 +1,1 @@
-"put a new book\'s title in the body and send a post request to this address: { title: 'string' }. you\'ll get back the new books\'s entry"
+"put a userid and all in the body and send a post request to this address: { user1_id: 'ObjectId' }........ you'll get back the  user's entry"

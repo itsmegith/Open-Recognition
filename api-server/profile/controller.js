@@ -35,7 +35,7 @@ controller.get_all = (_req, res) => {
 
 controller.get_add = (req, res) => {
   console.log("-- GET /add --");
-  res.send();
+  res.send("Sucessfully created");
 }
 
 controller.post_add = (req, res) => {

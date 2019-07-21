@@ -1,12 +1,33 @@
 [
     {
-        "__v": 0, 
-        "_id": "5d1628d372a085e397dbb7ad",
-        "first_name": "twt"
+        "_id": "5d342e6fbe005e4248231db5",
+        "first_name": "Roger",
+        "last_name": "Federer",
+        "username": "RF",
+        "email": "RF@perfect.org",
+        "password": "fkdkss",
+        "__v": 0,
+        "join_date": "2019-07-21T16:28:46.656Z"
     },
     {
-        "__v": 0, 
-        "_id": "5d162b098fc020e5dc8fc31f", 
-        "first_name": "rer"
+        "_id": "5d3435756d1bfd76a13b87a0",
+        "first_name": "Frisca",
+        "last_name": "Julia",
+        "email": "frisca@gmail.com",
+        "password": "abcd",
+        "username": "heyhey",
+        "date": "2019-07-21T09:50:45.217Z",
+        "__v": 0,
+        "join_date": "2019-07-21T16:28:46.657Z"
+    },
+    {
+        "_id": "5d34435dbe005e4248231dba",
+        "first_name": "Roger",
+        "last_name": "Federer",
+        "username": "RFfff",
+        "email": "RF@perfect.org",
+        "password": "fkdkss",
+        "__v": 0,
+        "join_date": "2019-07-21T16:28:46.657Z"
     }
 ]
