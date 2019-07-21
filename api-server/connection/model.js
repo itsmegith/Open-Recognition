@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
-
+const ObjectId = mongoose.Schema.Types.ObjectId
 const connection_schema = mongoose.Schema(
   {
-    user1_id: Number,
-    user2_id:  Number,
+    user1_id: ObjectId,
+    user2_id: ObjectId ,
     accept1: Boolean,
     accept2: Boolean,
     story:String,

@@ -46,7 +46,6 @@ controller.post_add = (req, res) => {
   const new_email = req.body.email;
   const new_password = req.body.password;
   const new_active = req.body.active;
-  const new_join_date = req.body.join_date;
   const new_photo = req.body.photo;
   const new_profile = {
     first_name: new_first_name,
@@ -55,7 +54,6 @@ controller.post_add = (req, res) => {
     email: new_email,
     password: new_password,
     active: new_active,
-    join_date: new_join_date,
     photo: new_photo
   };
   profiles.create(new_profile)
@@ -118,7 +116,6 @@ controller.post_id_update = (req, res) => {
   const email = req.body.email;
   const last_name = req.body.last_name;
   const active = req.body.active;
-  const join_date = req.body.join_date;
   const photo = req.body.photo;
 
   const name_object = {
@@ -128,7 +125,6 @@ controller.post_id_update = (req, res) => {
     email: email,
     password: password,
     active: active,
-    join_date: join_date,
     photo: photo
   };
   profiles.update(id_object, name_object)
