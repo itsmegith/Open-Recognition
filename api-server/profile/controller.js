@@ -38,6 +38,7 @@ controller.get_add = (req, res) => {
   res.send("Sucessfully created");
 }
 
+
 controller.post_add = (req, res) => {
   console.log("-- POST /add --");
   const new_first_name = req.body.first_name;
