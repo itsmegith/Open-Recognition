@@ -7,6 +7,7 @@ const connection_schema = mongoose.Schema(
     accept1: Boolean,
     accept2: Boolean,
     story:String,
+    location:String,
     date: {
       type: Date,
       default: Date.now

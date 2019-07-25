@@ -49,7 +49,9 @@ controller.post_add = (req, res) => {
     const new_accept1 = req.body.accept1;
     const new_accept2 = req.body.accept2;
     const new_story = req.body.story;
-    const new_profile = { user1_id: new_user1_id,user2_id: new_user2_id,accept1: new_accept1,accept2: new_accept2, story: new_story };
+    const new_location = req.body.location;
+
+    const new_profile = { user1_id: new_user1_id,user2_id: new_user2_id,accept1: new_accept1,accept2: new_accept2, story: new_story, location: new_location };
     connections.create(new_profile)
       // modify the next line based on your project's needs
       .then((db_response) => { res.send(db_response) })
@@ -101,7 +103,8 @@ controller.post_id_update = (req, res) => {
     const accept1 = req.body.accept1;
     const accept2 = req.body.accept2;
     const story = req.body.story;
-    const connection_object = { user1_id: user1_id,user2_id_id:user2_id_id,accept1:accept1,accept2:accept2,story:story };
+    const location = req.body.location
+    const connection_object = { user1_id: user1_id,user2_id_id:user2_id_id,accept1:accept1,accept2:accept2,story:story,location: location };
     connections.update(id_object,connection_object)
       // modify the next line based on your project's needs        
       .then((db_response) => { res.send(db_response) })
