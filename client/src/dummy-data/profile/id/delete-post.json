@@ -1,18 +1,18 @@
 {
+    "n": 1,
+    "opTime": {
+        "ts": "6718290850603859969",
+        "t": 2
+    },
+    "electionId": "7fffffff0000000000000002",
+    "ok": 1,
+    "operationTime": "6718290850603859969",
     "$clusterTime": {
-        "clusterTime": "6708358073011929089",
+        "clusterTime": "6718290850603859969",
         "signature": {
-            "hash": "3Ii5YyCidHh6fprUsHPQ2AHifQg=",
-            "keyId": "6706839153532731393"
+            "hash": "oo+iFuKBqJXofVg/q95dV3e8fYg=",
+            "keyId": "6711469050968408065"
         }
     },
-    "deletedCount": 1,
-    "electionId": "7fffffff0000000000000001",
-    "n": 1,
-    "ok": 1,
-    "opTime": {
-        "t": 1,
-        "ts": "6708358073011929089"
-    },
-    "operationTime": "6708358073011929089"
+    "deletedCount": 1
 }

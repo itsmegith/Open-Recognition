@@ -1,18 +1,18 @@
 {
-    "$clusterTime": {
-        "clusterTime": "6708358511098593281",
-        "signature": {
-            "hash": "Q8SJ/sM0d2edopKdOSZLS2GQ9Bc=",
-            "keyId": "6706839153532731393"
-        }
-    },
-    "electionId": "7fffffff0000000000000001",
     "n": 1,
     "nModified": 1,
-    "ok": 1,
     "opTime": {
-        "t": 1,
-        "ts": "6708358511098593281"
+        "ts": "6718299015336689666",
+        "t": 2
     },
-    "operationTime": "6708358511098593281"
+    "electionId": "7fffffff0000000000000002",
+    "ok": 1,
+    "operationTime": "6718299015336689666",
+    "$clusterTime": {
+        "clusterTime": "6718299015336689666",
+        "signature": {
+            "hash": "b92C/4Em1v896aUIuGyr4jRWO80=",
+            "keyId": "6711469050968408065"
+        }
+    }
 }

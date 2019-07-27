@@ -1,7 +1,23 @@
 [
     {
+        "_id": "5d342e6fbe005e4248231db5",
+        "first_name": "Roger",
+        "last_name": "Federer",
+        "username": "RF",
+        "email": "RF@perfect.org",
+        "password": "fkdkss",
         "__v": 0,
-        "_id": "5d18dfe9ab75a5311958edcd",
-        "first_name": "ttt"
+        "join_date": "2019-07-27T10:37:15.502Z"
+    },
+    {
+        "_id": "5d3435756d1bfd76a13b87a0",
+        "first_name": "Frisca",
+        "last_name": "Julia",
+        "email": "frisca@gmail.com",
+        "password": "abcd",
+        "username": "heyhey",
+        "date": "2019-07-21T09:50:45.217Z",
+        "__v": 0,
+        "join_date": "2019-07-27T10:37:15.503Z"
     }
 ]
