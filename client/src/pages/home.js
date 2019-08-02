@@ -62,9 +62,8 @@ export default function SignInSide() {
           <Typography component="h1" variant="h5">
             Sign in
           </Typography>
-          <form className={classes.form} onSubmit={this.handleSubmit} noValidate>
+          <form className={classes.form} noValidate>
             <TextField
-              onChange = {this.handleSubmit}
               variant="outlined"
               margin="normal"
               required
@@ -76,7 +75,6 @@ export default function SignInSide() {
               autoFocus
             />
             <TextField
-              onChange = {this.handleSubmit}
               variant="outlined"
               margin="normal"
               required
@@ -107,7 +105,7 @@ export default function SignInSide() {
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="signup" variant="body2">
+                <Link href="register" variant="body2">
                   {"Don't have an account? Sign Up"}
                 </Link>
               </Grid>
