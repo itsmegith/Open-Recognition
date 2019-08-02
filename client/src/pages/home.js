@@ -42,9 +42,9 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+
 export default function SignInSide() {
   const classes = useStyles();
-
   return (
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
@@ -62,8 +62,9 @@ export default function SignInSide() {
           <Typography component="h1" variant="h5">
             Sign in
           </Typography>
-          <form className={classes.form} noValidate>
+          <form className={classes.form} onSubmit={this.handleSubmit} noValidate>
             <TextField
+              onChange = {this.handleSubmit}
               variant="outlined"
               margin="normal"
               required
@@ -75,6 +76,7 @@ export default function SignInSide() {
               autoFocus
             />
             <TextField
+              onChange = {this.handleSubmit}
               variant="outlined"
               margin="normal"
               required
